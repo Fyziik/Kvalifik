@@ -1,4 +1,7 @@
 import { User } from "./User";
+import { Status } from "./Status";
+import { Location } from "./Location";
+import { Organisation } from "./Organisation";
 
 export class Event {
     id;
@@ -15,22 +18,4 @@ export class Event {
     responsible?: User;
     collaboration: Organisation[];
     status: Status;
-}
-
-export enum Status {
-    Draft,
-    Published,
-    Past
-}
-
-export class Location {
-    id;
-    name: String;
-    roomNumber: number;
-}
-
-export class Organisation {
-    id;
-    name: String;
-    description: String;
 }
